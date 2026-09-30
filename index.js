@@ -581,7 +581,7 @@ const updateContactsBatch = async (contacts) => {
         inputs: batch.map((contact) => ({
           id: contact.id,
           properties: {
-            // lead_campaign_engagement_date: getEngagementDate(contact),
+            lead_campaign_engagement_date: getEngagementDate(contact),
             // document_downloadedad_booked: contact.segment,
             lead_source__ad: getLeadSourceAd(contact),
             time_to_first_contact_ad: getTimeToFirstContactAd(contact),
